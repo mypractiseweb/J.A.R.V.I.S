@@ -1,0 +1,114 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.form{
+	position: absolute;
+	width: auto;
+	height: 30vh;
+	left: 70%;
+	top: 300px;
+	color: rgb(100,200,500);
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+}
+
+#user{
+	position: relative;
+	width: 50%;
+	height: auto;
+	margin-top: 10px;
+	outline: none;
+
+}
+
+#pass{
+	position: relative;
+	width: 52%;
+	height: auto;
+	margin-top: 10px;
+	outline: none;
+}
+
+#enter{
+	position: relative;
+	width: 55%;
+	height: auto;
+	left: 95px;
+	margin-top: 20px;
+	background-color: rgb(100,200,500);
+	border:none;
+	font-family: 'Orbitron', sans-serif;
+}
+
+#banner{
+	position: relative;
+	width:100%;
+    text-align:center;
+	font-family: 'Orbitron', sans-serif;	
+	color: rgb(100,200,500);
+}
+
+#visitor{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	/*top: 65px;*/
+	font-size: 35px;
+	font-family: 'Orbitron', sans-serif;	
+	color: rgb(100,200,500);	
+	animation-name: visitor;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-timing-function: ease;
+	animation-duration: 2s;
+
+}
+
+#pass:focus,#user:focus{
+	outline: 2px solid rgb(100,200,500); 
+}
+
+
+@keyframes visitor{
+	50%{
+		color: rgb(100,200,500);
+	}
+
+	75%{
+		color: rgb(100,230,500);
+	}
+
+	100%{
+		color: rgb(100,300,600);
+	}
+}
+
+@media (min-width: 300px) and (max-width: 499px) {
+
+ 	#enter{
+        left: 0px;
+    }
+
+   	.form{
+   		left: 60%;
+   	} 
+
+}
+
+@media (min-width: 500px) and (max-width: 875px) {
+
+ 	#enter{
+        width: 55%;
+        align-items: center;
+    }
+
+   	.form{
+   		left: 60%;
+   	} 
+
+}

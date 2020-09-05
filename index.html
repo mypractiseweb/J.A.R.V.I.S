@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Server</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"> -->
+
+</head>
+<body>
+
+	<video  id="myVideo" autoplay>
+  		<source src="J.A.R.V.I.S.mp4" type="video/mp4">
+	</video>
+
+		<h1 id="banner">WELCOME TO THE J.A.R.V.I.S 'S SYSTEM</h1>
+		<h2 id="visitor"></h2>
+
+	<form>
+		<div class="form">
+			<label>UserName</label>
+			<input type="text" required id="user">
+			<br>
+			<label>Password</label>
+			<input type="password" required id="pass">
+			<br>
+			<button type="button" id="enter">Enter</button>
+		</div>
+	</form>
+
+	<script>
+		var nameQuery=prompt("Kindly! Enter Your Name");
+		var visitor=document.getElementById('visitor');
+		visitor.innerHTML=nameQuery;
+		var user=document.getElementById("user");
+		var pass=document.getElementById("pass");
+
+		document.getElementById("enter").onclick = function () {
+			if (user.value==="Mr Diwash" && pass.value==="I am an Iron man"){
+			alert("Diwash restricted the Area");
+			}else alert("Acess Denied");
+
+		};
+	
+	</script>
+
+</body>
+</html>
